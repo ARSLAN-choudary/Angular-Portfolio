@@ -1,0 +1,58 @@
+.navlink {
+    @apply mr-5 cursor-pointer text-black dark:text-gray-300;
+    position: relative;
+    overflow: hidden;
+}
+
+.navlink::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: transparent; /* Initial background color */
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Individual link styles with hover effect */
+.navlink-home {
+    @apply hover:text-[#FF5733] dark:hover:text-[#ff6f4f]
+}
+.navlink-home::after {
+    background-color: #FF5733;
+}
+
+.navlink-about {
+    @apply hover:text-[#3498DB] dark:hover:text-[#54bbff]
+}
+.navlink-about::after {
+    background-color: #3498DB;
+}
+
+.navlink-services {
+    @apply hover:text-[#2ECC71] dark:hover:text-[#4cc17c]
+}
+.navlink-services::after {
+    background-color: #2ECC71;
+}
+
+.navlink-contact {
+    @apply hover:text-[#F1C40F] dark:hover:text-[#f7d445]
+}
+.navlink-contact::after {
+    background-color: #F1C40F;
+}
+
+.navlink-project {
+    @apply hover:text-[#e90ff1] dark:hover:text-[#e64feb]
+}
+.navlink-project::after {
+    background-color: #e90ff1;
+}
+
+/* Hover Effect */
+.navlink:hover::after {
+    transform: translateX(0);
+}

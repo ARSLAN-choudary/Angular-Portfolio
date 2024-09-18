@@ -1,0 +1,518 @@
+<app-navbar class="sticky top-0 z-50  shadow-md"></app-navbar>
+
+<h1 class="text-4xl md:text-6xl font-extrabold text-center gradient-text bg-clip-text pt-5">
+  Welcome to My Portfolio
+</h1>
+<div class="mt-20">
+  <div class="flex md:flex-row flex-col p-3 justify-start items-center gap-12">
+    <div class="flex items-center flex-col gap-2 w-[50%]">
+      <div
+        class="custom-border-radius w-full max-w-72 h-72 flex justify-center items-center bg-[#4a90e2] dark:bg-[linear-gradient(90deg,_rgba(81,2,147,1)_1%,_rgba(114,2,108,1)_64%,_rgba(5,4,85,1)_100%)] light-mode-shadow dark:dark-mode-shadow transition-shadow duration-300 ease-in-out">
+        <div
+          class="w-32 h-32 sm:w-44 sm:h-44 lg:w-56 lg:h-56 rounded-full overflow-hidden bg-gray-200 dark:bg-gray-700 border-4 border-gray-300 dark:border-gray-600 transition-transform duration-300 ease-in-out transform hover:scale-105">
+          <img src="/asssets/my-img.jpg" alt="Profile Image" class="w-full h-full object-cover rounded-full">
+        </div>
+      </div>
+      <div class="flex flex-col gap-2 items-center">
+        <p class="text-purple-500 text-5xl font-bold italic text-center">Hi I am <span
+            class="text-gradient">Arslan</span></p>
+        <div class="flex w-full items-center rounded-full">
+          <div class="flex-1 border-b border-indigo-600"></div>
+          <span class="text-indigo-600 text-lg font-semibold leading-8 px-8 py-3">Abilities</span>
+          <div class="flex-1 border-b border-indigo-600"></div>
+        </div>
+        <div class="w-full text-left"> <!-- Align text to the start -->
+          <ngx-typed-writer
+            [strings]="['A Passionate Frontend Developer', 'Building Modern Web Applications', 'Crafting Beautiful User Interfaces','Professional UI/UX designs']"
+            [typeSpeed]="80" [backSpeed]="25" [backDelay]="1000" [startDelay]="500" [loop]="true"
+            class="text-3xl font-bold font-mono text-start dark:text-white text-black">
+          </ngx-typed-writer>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-[50%] h-[50%]">
+      <img src="/asssets/florian-olivo-4hbJ-eymZ1o-unsplash.jpg" alt="" class="w-full h-full rounded-[12px]">
+    </div>
+  </div>
+
+</div>
+<img src="/asssets/bg.svg" alt="" class="">
+
+<!-- *aboutsection -->
+<div
+  class="bg-[radial-gradient(circle,_rgba(168,155,229,1)_0%,_rgba(255,255,255,1)_30%)] dark:bg-[radial-gradient(circle,_rgba(186,49,255,1)_0%,_rgba(54,28,43,1)_92%)] mx-10"
+  id="about">
+  <div class="w-full text-center space-b-6 -mt-10 custom-bg p-6 rounded-[20px]">
+    <h2 class="text-3xl md:text-4xl font-bold text-black dark:text-white mb-4">About Me</h2>
+
+    <p class="text-lg text-black dark:text-white leading-relaxed mb-6">
+      Hi, I'm Arslan, a passionate Angular developer with a knack for crafting modern, responsive, and
+      efficient web applications. I enjoy working with Angular 17, Tailwind CSS, and TypeScript, constantly
+      striving to improve my skills and deliver high-quality code.
+    </p>
+
+    <p class="text-lg text-black dark:text-white leading-relaxed mb-6">
+      I have extensive experience in building scalable, user-friendly web applications, focusing on performance and user
+      experience. I love working in agile teams, collaborating with designers and other developers to bring innovative
+      ideas to life.
+    </p>
+
+    <p class="text-lg text-black dark:text-white leading-relaxed mb-6">
+      My journey in web development has been driven by a deep curiosity for learning and experimenting with the latest
+      tools and technologies. Whether it's a challenging project or exploring a new tech stack, I am always eager to
+      grow and push the boundaries of what's possible.
+    </p>
+
+    <a href="#contact"
+      class="inline-block bg-gradient-to-r from-blue-500 to-purple-600 text-white py-2 px-6 rounded-lg shadow-md hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-700 transition-all transform hover:scale-105">
+      Get in Touch
+    </a>
+
+  </div>
+
+
+</div>
+
+
+<section id="services" class="py-16 md:py-24 px-4 md:px-8 lg:px-16  ">
+  <div class="container mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-8">My Services</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Service 1 -->
+      <div class="cards">
+        <div class="mb-4 flex justify-center items-center">
+          <img src="/asssets/designing.svg" alt="" class="w-[50%] h-[50%]">
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Web Designing</h3>
+        <p class="text-gray-600 dark:text-gray-400 shadow-md dark:shadow-md dark:shadow-[rgba(45,36,64,0.5)]">
+          Comprehensive web designing services that create visually stunning and user-friendly websites. We focus on
+          modern design principles, responsive layouts, and seamless user experiences to help your brand stand out
+          online.
+        </p>
+      </div>
+
+
+      <!-- Service 2 -->
+      <div class="cards">
+        <div class="mb-4 flex justify-center items-center">
+          <img src="/asssets/devlopment.svg" alt="" class="w-[40%] h-[40%]">
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Development</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          Our web development service specializes in creating dynamic and interactive websites tailored to your business
+          needs. We focus on building scalable and responsive solutions using the latest technologies, ensuring a
+          seamless user experience across all devices. From custom functionality to performance optimization, we bring
+          your vision to life with precision and efficiency.
+        </p>
+
+      </div>
+      <!-- Service 3 -->
+      <div class="cards">
+        <div class="mb-4 flex justify-center items-center">
+          <img src="/asssets/seo.svg" alt="" class="w-[23%] h-[23%]">
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">SEO Optimization</h3>
+        <p class="text-gray-600 dark:text-gray-400"> Enhance your website's visibility and rank higher on search engines
+          with our comprehensive SEO optimization services. We focus on keyword research, on-page optimization, and link
+          building to drive organic traffic and improve your online presence.</p>
+      </div>
+      <div class="cards">
+        <div class="mb-4 flex justify-center items-center">
+          <img src="/asssets/api.svg" alt="" class="w-[23%] h-[23%]">
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Api Integration</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          Additionally, our services include API integration to streamline data exchanges and enhance your website’s
+          functionality, ensuring a more cohesive and efficient digital experience.
+        </p>
+
+      </div>
+      <div class="cards">
+        <div class="mb-4 flex justify-center items-center">
+          <img src="/asssets/ecommerce.svg" alt="" class="w-[20%] h-[18%]">
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Ecommerce Solutions</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          We also offer robust eCommerce solutions designed to boost your online sales. Our services cover everything
+          from setting up user-friendly storefronts and payment gateways to optimizing product listings and managing
+          inventory. We ensure a seamless shopping experience for your customers and provide tools to help you
+          effectively manage and grow your online business.
+        </p>
+
+      </div>
+      <div class="cards">
+        <div class="mb-4 flex justify-center items-center">
+          <img src="/asssets/payment.svg" alt="" class="w-[27%] h-[27%]">
+        </div>
+        <h3 class="text-xl font-semibold text-gray-800 dark:text-white mb-2">Payment Gateways</h3>
+        <p class="text-gray-600 dark:text-gray-400">
+          including providing seamless payment gateway integration. This involves setting up and configuring payment
+          gateways to facilitate secure and efficient transactions. The integration supports multiple payment methods,
+          ensuring a smooth and trustworthy payment process for your customers. From handling payment processing and
+          security to ensuring compatibility with your online store, we make it easy for you to manage payments and grow
+          your business.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<section id="projects"
+  class="dark:bg-[radial-gradient(circle,_rgba(130,0,255,1)_0%,_rgba(45,36,64,1)_90%)] p-6 md:p-12 border-t">
+  <p class="text-4xl font-bold italic text-center  mb-12 dark:text-white">Projects</p>
+  <div class="container mx-auto flex flex-col md:flex-row gap-5">
+    <!-- Carousel Section -->
+    <div class="relative w-full md:w-1/2">
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div class="duration-700 ease-in-out absolute inset-0" *ngIf="currentIndex === 0">
+          <img src="/asssets/Screenshot 2024-09-16 160341.png" class="w-full h-full object-center" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="duration-700 ease-in-out absolute inset-0" *ngIf="currentIndex === 1">
+          <img src="/asssets/react.png" class="w-full h-full object-center" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="duration-700 ease-in-out absolute inset-0" *ngIf="currentIndex === 2">
+          <img src="/asssets/dubi.png" class="w-full h-full object-center" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="duration-700 ease-in-out absolute inset-0" *ngIf="currentIndex === 3">
+          <img src="/asssets/cbft.png" class="w-full h-full object-center" alt="...">
+        </div>
+        <!-- Item 5 -->
+        <div class="duration-700 ease-in-out absolute inset-0" *ngIf="currentIndex === 4">
+          <img src="/asssets/mechanincs.png" class="w-full h-full object-center" alt="...">
+        </div>
+      </div>
+
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 space-x-3 rtl:space-x-reverse bottom-5 left-1/2">
+        <button type="button" class="w-3 h-3 rounded-full" [class.active]="currentIndex === 0"
+          (click)="setActiveSlide(0)"></button>
+        <button type="button" class="w-3 h-3 rounded-full" [class.active]="currentIndex === 1"
+          (click)="setActiveSlide(1)"></button>
+        <button type="button" class="w-3 h-3 rounded-full" [class.active]="currentIndex === 2"
+          (click)="setActiveSlide(2)"></button>
+        <button type="button" class="w-3 h-3 rounded-full" [class.active]="currentIndex === 3"
+          (click)="setActiveSlide(3)"></button>
+        <button type="button" class="w-3 h-3 rounded-full" [class.active]="currentIndex === 4"
+          (click)="setActiveSlide(4)"></button>
+      </div>
+      <!-- Slider controls -->
+      <button type="button"
+        class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        (click)="prevSlide()">
+        <svg class="w-3 h-3 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M5 1 1 5l4 4" />
+        </svg>
+        <span class="sr-only">Previous</span>
+      </button>
+      <button type="button"
+        class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        (click)="nextSlide()">
+        <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m1 9 4-4-4-4" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Description Section -->
+    <div class="w-full md:w-1/2 mt-6 md:mt-0">
+      <div class="carousel-description">
+        <div class="description-slide" *ngIf="currentIndex === 0">
+          <h3 class="text-xl font-semibold dark:text-white text-center">Angular E-Commerce Platform</h3>
+          <p class="dark:text-white text-center">
+            A sleek and modern e-commerce solution built with Angular, designed for seamless user experiences and
+            efficient product management. This platform features a highly responsive design, fast-loading product pages,
+            and intuitive navigation to ensure customers have a smooth shopping experience. Integrated with secure
+            payment gateways and real-time inventory management, it offers a complete solution for any online business
+            looking to scale.
+          </p>
+        </div>
+        <div class="description-slide" *ngIf="currentIndex === 1">
+          <h3 class="text-xl font-semibold dark:text-white text-center">React E-Commerce Store</h3>
+          <p class="dark:text-white text-center">
+            A dynamic and responsive e-commerce store developed with React, offering a fast and interactive shopping
+            experience with real-time updates. Built with modern web technologies, this store supports dynamic product
+            listings, live stock updates, and a fast checkout process, making it ideal for businesses focused on speed
+            and customer satisfaction. It also includes a powerful admin panel for easy product management and
+            analytics.
+          </p>
+        </div>
+        <div class="description-slide" *ngIf="currentIndex === 2">
+          <h3 class="text-xl font-semibold dark:text-white text-center">Dubbizle Marketplace</h3>
+          <p class="dark:text-white text-center">
+            A WooCommerce-inspired marketplace for buying and selling used items, including apartments and other goods,
+            featuring an easy-to-use interface and comprehensive search capabilities. This marketplace allows users to
+            post listings, negotiate deals, and communicate directly within the platform. With advanced filters,
+            location-based searches, and user ratings, it provides a secure and reliable space for trading various
+            items.
+          </p>
+        </div>
+        <div class="description-slide" *ngIf="currentIndex === 3">
+          <h3 class="text-xl font-semibold dark:text-white text-center">Pari Match Betting App</h3>
+          <p class="dark:text-white text-center">
+            A cutting-edge betting application providing a comprehensive platform for sports betting and live odds,
+            designed with a focus on user engagement and secure transactions. The app offers a wide variety of sports to
+            bet on, along with real-time match updates and statistics. Users can manage their bets, view odds, and track
+            their winnings, all within a user-friendly interface that prioritizes security and ease of use.
+          </p>
+        </div>
+        <div class="description-slide" *ngIf="currentIndex === 4">
+          <h3 class="text-xl font-semibold dark:text-white text-center">Lucky Star Heavy Machinery</h3>
+          <p class="dark:text-white text-center">
+            An advanced platform for buying and selling heavy machinery and equipment, tailored for industry
+            professionals with a focus on detailed product specifications and robust search functionalities. The
+            platform allows users to browse machinery listings by category, price, and condition, and provides detailed
+            specifications for each item. With a strong emphasis on industrial-grade tools, this platform is built to
+            serve contractors and businesses in the heavy machinery sector.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="skills" class="py-16 px-4  ">
+  <div class="container mx-auto text-center">
+    <h2 class="text-4xl font-bold mb-8 dark:text-white">Skills & Proficiency</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">HTML</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-blue-500 h-full rounded" data-percent="90"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">CSS</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-green-500 h-full rounded" data-percent="85"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">JavaScript</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-yellow-500 h-full rounded" data-percent="80"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">TailwindCSS</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-teal-500 h-full rounded" data-percent="75"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">Bootstrap</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-purple-500 h-full rounded" data-percent="70"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">Angular</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-red-500 h-full rounded" data-percent="85"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">ReactJS</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-indigo-500 h-full rounded" data-percent="80"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">Git</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-orange-500 h-full rounded" data-percent="75"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">GitHub</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-black h-full rounded" data-percent="85"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">Canva</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-blue-500 h-full rounded" data-percent="98"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">Responsivenesss</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div class="skill-progress bg-cyan-500 h-full rounded" data-percent="100"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h3 class="text-xl font-semibold mb-4 dark:text-white">Problem Solving</h3>
+        <div class="skill-bar bg-gray-300 h-4 rounded">
+          <div
+            class="skill-progress bg-[linear-gradient(90deg,_rgba(131,58,180,1)_6%,_rgba(141,212,106,1)_30%,_rgba(73,207,248,1)_54%,_rgba(252,176,69,1)_70%,_rgba(238,22,22,1)_96%)] h-full rounded"
+            data-percent="70"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="faq" class="py-16 md:w-[50%] mx-auto bg-white mb-5 rounded-[16px]">
+  <div class="container mx-auto px-4">
+    <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+    <div class="max-w-3xl mx-auto">
+      <!-- Accordion for FAQs -->
+      <div class="accordion">
+        <!-- FAQ Item 1 -->
+        <div class="border-t border-gray-300">
+          <div class="faq-item py-4 px-6 cursor-pointer hover:bg-gray-100 transition ease-in-out duration-300"
+            (click)="toggle(0)">
+            <h3 class="text-xl font-semibold flex items-center justify-between">
+              What services do you offer?
+              <span class="accordion-icon text-gray-500 text-lg">{{ isOpen[0] ? '−' : '+' }}</span>
+            </h3>
+            <p class="text-gray-600 mt-2" *ngIf="isOpen[0]">
+              I offer a range of services including web development, UI/UX design, and consulting. My goal is to create
+              stunning, functional websites that drive results. I specialize in front-end development using Angular and
+              React, as well as custom design solutions tailored to your needs.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ Item 2 -->
+        <div class="border-t border-gray-300">
+          <div class="faq-item py-4 px-6 cursor-pointer hover:bg-gray-100 transition ease-in-out duration-300"
+            (click)="toggle(1)">
+            <h3 class="text-xl font-semibold flex items-center justify-between">
+              How can I contact you?
+              <span class="accordion-icon text-gray-500 text-lg">{{ isOpen[1] ? '−' : '+' }}</span>
+            </h3>
+            <p class="text-gray-600 mt-2" *ngIf="isOpen[1]">
+              You can contact me through the contact form on this website, or email me directly at exampleexample.com. I
+              will get back to you as soon as possible.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ Item 3 -->
+        <div class="border-t border-gray-300">
+          <div class="faq-item py-4 px-6 cursor-pointer hover:bg-gray-100 transition ease-in-out duration-300"
+            (click)="toggle(2)">
+            <h3 class="text-xl font-semibold flex items-center justify-between">
+              What is your typical project timeline?
+              <span class="accordion-icon text-gray-500 text-lg">{{ isOpen[2] ? '−' : '+' }}</span>
+            </h3>
+            <p class="text-gray-600 mt-2" *ngIf="isOpen[2]">
+              The timeline for a project depends on its complexity and requirements. On average, a project takes between
+              4 to 8 weeks from start to finish, including design, development, and testing phases.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ Item 4 -->
+        <div class="border-t border-gray-300">
+          <div class="faq-item py-4 px-6 cursor-pointer hover:bg-gray-100 transition ease-in-out duration-300"
+            (click)="toggle(3)">
+            <h3 class="text-xl font-semibold flex items-center justify-between">
+              Do you offer post-launch support?
+              <span class="accordion-icon text-gray-500 text-lg">{{ isOpen[3] ? '−' : '+' }}</span>
+            </h3>
+            <p class="text-gray-600 mt-2" *ngIf="isOpen[3]">
+              Yes, I offer post-launch support to ensure everything runs smoothly. This includes bug fixes, minor
+              updates, and general assistance.
+            </p>
+          </div>
+        </div>
+        <!-- FAQ Item 5 -->
+        <div class="border-t border-gray-300">
+          <div class="faq-item py-4 px-6 cursor-pointer hover:bg-gray-100 transition ease-in-out duration-300"
+            (click)="toggle(4)">
+            <h3 class="text-xl font-semibold flex items-center justify-between">
+              Can you work on a fixed budget?
+              <span class="accordion-icon text-gray-500 text-lg">{{ isOpen[4] ? '−' : '+' }}</span>
+            </h3>
+            <p class="text-gray-600 mt-2" *ngIf="isOpen[4]">
+              Yes, I can work on a fixed budget. Please provide details about your project, and I will give you a quote
+              based on your requirements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ?contac me section -->
+
+<section class="text-gray-600 body-font relative">
+  <div class="absolute inset-0">
+    <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1065.4183544445798!2d71.06287663277364!3d29.235114895599903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393a4932202c9621%3A0x9c9b8d9c1aad6ab6!2sUch%20Sharif%2C%20Bahawalpur%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1726562338408!5m2!1sen!2s"></iframe>
+  </div>
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div
+      class="lg:w-1/2 md:w-1/2 bg-white rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0 relative z-10 shadow-md">
+      <h2 class="text-gray-900 text-lg mb-4 font-medium title-font">Feedback</h2>
+      <p class="leading-relaxed mb-6 text-gray-600">We'd love to hear from you! Please fill out the form below and send
+        us your feedback or inquiries.</p>
+      <form #feedbackForm="ngForm" (ngSubmit)="sendEmail(feedbackForm)" novalidate>
+        <div class="relative mb-4">
+          <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+          <input type="text" id="name" name="name" ngModel #name="ngModel"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            required>
+          <div *ngIf="name.invalid && (name.dirty || name.touched)" class="text-red-600 text-sm">
+            <div *ngIf="name.errors?.['required']">Name is required.</div>
+          </div>
+        </div>
+
+        <div class="relative mb-4">
+          <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+          <input type="email" id="email" name="email" ngModel #email="ngModel"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-2 px-3 leading-8 transition-colors duration-200 ease-in-out"
+            required>
+          <div *ngIf="email.invalid && (email.dirty || email.touched)" class="text-red-600 text-sm">
+            <div *ngIf="email.errors?.['required']">Email is required.</div>
+            <div *ngIf="email.errors?.['email']">Invalid email address.</div>
+          </div>
+        </div>
+
+        <div class="relative mb-4">
+          <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+          <textarea id="message" name="message" ngModel #message="ngModel"
+            class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-2 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+            required></textarea>
+          <div *ngIf="message.invalid && (message.dirty || message.touched)" class="text-red-600 text-sm">
+            <div *ngIf="message.errors?.['required']">Message is required.</div>
+          </div>
+        </div>
+
+        <button 
+        type="submit" 
+        [disabled]="feedbackForm.invalid"
+        class="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+        [ngClass]="{'bg-gray-400 text-gray-700 cursor-not-allowed': feedbackForm.invalid}"
+      >
+        Send
+      </button>
+
+        <p class="text-xs text-gray-500 mt-3">We appreciate your feedback and will get back to you as soon as possible.
+        </p>
+      </form>
+
+    </div>
+  </div>
+</section>
+
+
+
+<app-footer></app-footer>

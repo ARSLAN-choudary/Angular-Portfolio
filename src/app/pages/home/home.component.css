@@ -1,0 +1,147 @@
+.text-gradient {
+    background: linear-gradient(to bottom, #06b6d4 30%, #ec4899 80%,#ff7926 20%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+    display: inline-block;
+}
+
+#typewriter {
+    display: inline-block; /* Ensures the text stays on one line */
+  }
+  
+
+
+
+
+
+  .custom-border-radius {
+    border-radius: 30% 70% 67% 33% / 30% 41% 59% 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adjust dimensions as needed */
+  }
+
+  .light-mode-shadow {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5), 0 0 25px rgba(74, 144, 226, 0.6); /* Light mode glow */
+  }
+  .dark-mode-shadow {
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.5), 0 0 25px rgba(255, 105, 180, 0.8); /* Dark mode glow */
+  }
+  .gradient-text {
+    background: linear-gradient(45deg, #4ae3cc, #ec4cc7, #957777); /* Modern browsers */
+    -webkit-background-clip: text; /* Chrome, Safari */
+    -webkit-text-fill-color: transparent; /* Chrome, Safari */
+    background-clip: text; /* Standard for future browsers, but may not be supported in all */
+    color: transparent; /* Fallback for browsers that do not support background-clip on text */
+  }
+  
+
+  .wave .sub_wave:before , .wave .sub_wave:after{
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 100% 50%;
+} 
+.wave .sub_wave:before {
+    width: 55%;
+    height: 109%;
+    background-color: #f8f9fa !important;
+    right: -1.5%;
+    top: 60%;
+}
+.wave .sub_wave:after{
+    width: 55%;
+    height: 100%;
+    background-color: rgb(11 36 110);
+    left: -1.5%;
+    top: 40%;
+}
+.wave .sub_wave{
+    position: absolute;
+    height: 86px;
+    width: 100%;
+    background: rgb(11 36 110);
+    bottom: 0px;
+}
+.wave {
+    position: relative;
+    height: 50%;
+    background: rgb(11 36 110);
+}
+                    
+
+.custom-bg {
+   /* From https://css.glass */
+   background: rgba(15,107,194,0.25);
+   -webkit-backdrop-filter: blur(6px);
+   backdrop-filter: blur(6px);
+   border: 1px solid rgba(15,107,194,0.125);
+  }
+  
+  
+  /* Add this to your CSS file or within a <style> tag */
+  .glowing-card-hover:hover {
+    box-shadow: 0 0 15px rgba(130, 0, 255, 0.7), 0 0 25px rgba(130, 0, 255, 0.5);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  .glowing-card-light:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3), 0 0 25px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  .cards{
+    @apply bg-white dark:bg-[radial-gradient(circle,_rgba(130,0,255,1)_0%,_rgba(45,36,64,1)_90%)] dark:shadow-lg rounded-lg shadow-lg p-6 transition-transform transform hover:scale-105 hover:dark:shadow-[rgba(130,_0,_255,_0.7),_0_0_25px_rgba(130,_0,_255,_0.5)] hover:shadow-[rgba(0,_0,_0,_0.3),_0_0_25px_rgba(0,_0,_0,_0.1)]
+  }
+
+
+
+
+
+
+
+
+
+  .carousel-description {
+    position: relative;
+  }
+  
+  .description-slide {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .description-slide.hidden {
+    opacity: 0;
+  }
+  
+  .description-slide[data-carousel-item-description="active"] {
+    opacity: 1;
+  }
+  
+  .skill-bar {
+    position: relative;
+    width: 100%;
+    background-color: #ddd;
+  }
+  
+  .skill-progress {
+    width: 0;
+    height: 100%;
+    transition: width 2s ease-in-out;
+  }
+  
+
+  
+
+
+  .accordion-item {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .accordion-item.open {
+    max-height: 500px; /* Adjust as necessary */
+  }
+  
+  

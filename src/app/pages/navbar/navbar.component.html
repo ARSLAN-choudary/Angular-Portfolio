@@ -1,0 +1,32 @@
+<header class="text-gray-600 body-font bg-white bg-opacity-30 backdrop-blur-lg shadow-lg relative flex items-center">
+    <div class="container mx-auto flex flex-wrap px-3 py-[5px] flex-col md:flex-row items-center">
+      <a class="flex title-font font-medium items-center text-gray-900 md:mb-0">
+        <img src="/asssets/YAuTZk01.svg" alt="" class="w-[150px] h-[50px] object-cover">
+        <span class="ml-3 text-xl"></span>
+      </a>
+      <nav class="md:mx-auto flex flex-col md:flex-row md:gap-0 gap-3 md:pb-0 pb-2 items-center text-base justify-center">
+        <a class="navlink dark:text-gray-400 navlink-home" >Home</a>
+        <a class="navlink dark:text-gray-400 navlink-about" >About Me</a>
+        <a class="navlink dark:text-gray-400 navlink-services">Services</a>
+        <a class="navlink dark:text-gray-400 navlink-project">Projects</a>
+        <a class="navlink dark:text-gray-400 navlink-contact" >Contact Me</a>
+      </nav>
+    </div>
+    <div class="me-10 cursor-pointer" (click)="switchTheme()">
+        <img 
+            src="/asssets/moon.svg" 
+            alt="Moon" 
+            class="w-8 h-8 absolute top-4 right-8 transition-opacity duration-500 ease-in-out" 
+            [ngClass]="{'opacity-100': !themeService.currentTheme, 'opacity-0': themeService.currentTheme}"
+        >
+        <img 
+            src="/asssets/sun-with-face.svg" 
+            alt="Sun" 
+            class="w-8 h-8 absolute top-4 right-8 transition-opacity duration-500 ease-in-out" 
+            [ngClass]="{'opacity-100': themeService.currentTheme, 'opacity-0': !themeService.currentTheme}"
+        >
+    </div>
+</header>
+
+
+

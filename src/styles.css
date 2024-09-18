@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    @apply text-black bg-white ;
+}
+
+.custom-dark {
+    @apply  dark:bg-[linear-gradient(90deg,_rgba(19,_1,_34,_1)_1%,_rgba(30,_1,_51,_1)_51%,_rgba(20,_1,_26,_1)_100%)];
+}
