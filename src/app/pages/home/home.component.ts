@@ -105,6 +105,7 @@ export class HomeComponent implements OnInit{
         from_email: form.value.email,
         message: form.value.message
       };
+     
 
       emailjs.send('service_b70fq7o', 'template_gar76yp', templateParams, 'T4IVeiG_NuN1_P4Jc')
         .then((response) => {
@@ -118,5 +119,14 @@ export class HomeComponent implements OnInit{
     }
   }
 
+
+  emailSent = false;
+
+  openmodal(){
+    this.emailSent=!this.emailSent
+  }
+  closeNotification() {
+    this.emailSent = false;
+  }
 
 }
