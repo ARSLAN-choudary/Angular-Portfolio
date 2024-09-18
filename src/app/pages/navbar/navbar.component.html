@@ -7,34 +7,25 @@
     </a>
 
     <!-- Navigation Menu -->
-    <nav 
-    class="md:mx-auto flex flex-col md:flex-row md:gap-6 gap-3 md:pb-0 pb-2 items-center text-base justify-center 
-           transition-all duration-700 ease-in-out" 
-    [ngClass]="{'h-full': navopen, 'h-0': !navopen}">
-    
-    <a class="navlink navlink-home dark:text-gray-400 md:mr-6">Home</a>
-    <a class="navlink navlink-about dark:text-gray-400 md:mr-6">About Me</a>
-    <a class="navlink navlink-services dark:text-gray-400 md:mr-6">Services</a>
-    <a class="navlink navlink-project dark:text-gray-400 md:mr-6">Projects</a>
-    <a class="navlink navlink-contact dark:text-gray-400">Contact Me</a>
-</nav>
+    <nav class="md:mx-auto flex flex-col md:flex-row md:gap-6 gap-3 md:pb-0 pb-2 items-center text-base justify-center 
+           transition-all duration-700 ease-in-out" [ngClass]="{'h-full': navopen, 'h-0': !navopen}">
 
-  
+      <a href="#home" class="navlink navlink-home dark:text-gray-400 md:mr-6">Home</a>
+      <a href="#about" class="navlink navlink-about dark:text-gray-400 md:mr-6">About Me</a>
+      <a href="#services" class="navlink navlink-services dark:text-gray-400 md:mr-6">Services</a>
+      <a href="#projects" class="navlink navlink-project dark:text-gray-400 md:mr-6">Projects</a>
+      <a href="#contact" class="navlink navlink-contact dark:text-gray-400">Contact Me</a>
+    </nav>
+
+
 
     <!-- Theme Switcher -->
-    <div class="absolute top-4 right-8 flex items-center cursor-pointer" (click)="switchTheme()">
-      <img 
-        src="/asssets/moon.svg" 
-        alt="Moon" 
-        class="w-8 h-8 transition-opacity duration-500 ease-in-out"
-        [ngClass]="{'opacity-100': !themeService.currentTheme, 'opacity-0': themeService.currentTheme}"
-      >
-      <img 
-        src="/asssets/sun-with-face.svg" 
-        alt="Sun" 
-        class="w-8 h-8 transition-opacity duration-500 ease-in-out"
-        [ngClass]="{'opacity-100': themeService.currentTheme, 'opacity-0': !themeService.currentTheme}"
-      >
+    <div class="absolute top-4 right-12 flex items-center cursor-pointer" (click)="switchTheme()">
+      <img src="/asssets/moon.svg" alt="Moon" class="w-8 h-8 transition-opacity duration-500 ease-in-out"
+        [ngClass]="{'opacity-100': !themeService.currentTheme, 'opacity-0': themeService.currentTheme}">
+      <img src="/asssets/sun-with-face.svg" alt="Sun"
+        class="w-8 h-8 transition-opacity duration-500 ease-in-out absolute right-0"
+        [ngClass]="{'opacity-100': themeService.currentTheme, 'opacity-0': !themeService.currentTheme}">
     </div>
 
     <!-- Mobile Menu Button -->
