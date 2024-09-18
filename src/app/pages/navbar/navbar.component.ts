@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  navopen=false
   isDarkTheme = false;
 
   constructor(public themeService: ToggleThemeService) {
@@ -19,5 +20,8 @@ export class NavbarComponent {
   switchTheme() {
     this.isDarkTheme = !this.isDarkTheme;
     this.themeService.toggleTheme();
+  }
+  togglenav(){
+this.navopen=!this.navopen
   }
 }
